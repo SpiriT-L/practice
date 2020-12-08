@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Игра угадай число</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Угадай число</h1>
+    <p>
+      Мы выбрали случайное число от 1 до 100. Посмотрите, сможете ли вы угадать
+      его за 10 либо менее попыток. Мы подскажем вам в какую сторону нужно
+      двигаться - в большую или меньшую.
+    </p>
+    <div class="from">
+      <label for="guessField">Введите ваш вариант:</label>
+      <input type="text" id="guessField" class="guessField" />
+      <input type="submit" value="Отправить ответ" class="guessSubmit" />
+    </div>
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
